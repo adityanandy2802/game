@@ -95,7 +95,6 @@ while True:
 
     # cv2.imshow("img", img)
     image_placeholder.image(img, channels="RGB")
-    k = cv2.waitKey(0)
     if (keyboard.is_pressed("e")):
         break
 
@@ -216,13 +215,13 @@ while (True):
         cv2.putText(img, f"Quit?", (200, 250), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), thickness=2)
         # cv2.imshow("img", img)
         image_placeholder.image(img, channels="RGB")
-        m = cv2.waitKey(0)
+        
         while (not (keyboard.is_pressed("y") or keyboard.is_pressed("n"))):
             cv2.rectangle(img, (300, 270), (200, 210), (255, 255, 255), thickness=-1)
             cv2.putText(img, "Quit?", (200, 250), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), thickness=2)
             # cv2.imshow("img", img)
             image_placeholder.image(img, channels="RGB")
-            m = cv2.waitKey(0)
+            
         if (keyboard.is_pressed("y")):
             defeat = 0
             #             play_again=0
