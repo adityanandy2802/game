@@ -1,5 +1,5 @@
 cv2
-numpy as np
+numpy
 keyboard
 random
 math
