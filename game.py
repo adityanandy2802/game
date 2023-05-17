@@ -237,7 +237,8 @@ if (defeat == 1):
     cv2.putText(img, "DEFEAT", (200, 250), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), thickness=2)
     # cv2.imshow("img", img)
     image_placeholder.image(img, channels="RGB")
-    k = cv2.waitKey(0)
+    if (keyboard.is_pressed("q")):
+        pass
 
 # print(int(f.read()))
 if (best_score < present_score):
